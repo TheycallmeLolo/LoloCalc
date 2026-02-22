@@ -1,24 +1,28 @@
 
+# 🧮 LOLOCALC – Scientific Calculator (Shiny + JavaScript)
 
-# 🧮 LoloCalc – Scientific Calculator (Shiny + JavaScript)
+**LOLOCALC** is a modern scientific calculator built using **R Shiny** with a custom JavaScript-based calculation engine.
 
-LoloCalc is a modern scientific calculator built using **R Shiny** with a custom JavaScript expression engine.
-
-It features a clean UI inspired by classic scientific calculators with a smooth user experience and proper mathematical precedence handling.
+It combines a CASIO-inspired design with smooth UI interactions and correct mathematical precedence handling.
 
 ---
 
 ## 🚀 Features
 
 * Basic arithmetic operations (+ − × ÷)
+* Parentheses with automatic balancing
+* Square root (√)
+* Cube root (∛)
 * Factorial (x!)
-* Decimal support
-* Proper operator precedence (* and / before + and -)
-* Error handling (Math Error detection)
-* Responsive grid layout
-* Animated display updates
-* Custom modal "About Us" section
-* Clean CASIO-inspired interface
+* π constant support
+* Ans (last result memory)
+* Decimal number support
+* Proper operator precedence
+* Scientific notation for very large/small numbers
+* Math Error detection and handling
+* Animated button press effects
+* Custom "About Us" modal with blur background
+* Responsive centered layout
 
 ---
 
@@ -26,32 +30,32 @@ It features a clean UI inspired by classic scientific calculators with a smooth 
 
 * **R**
 * **Shiny**
-* **JavaScript (Custom Expression Parser)**
-* **Custom CSS Grid Layout**
-* Google Fonts (IBM Plex Mono & Tajawal)
+* **Vanilla JavaScript (Custom Expression Engine)**
+* **HTML5**
+* **Custom CSS (Grid Layout + Animations)**
 
 ---
 
 ## 📸 Screenshot
 
-
-<img width="796" height="749" alt="Image" src="https://github.com/user-attachments/assets/7dc83c47-9c14-4ae3-8777-bbd927e7a4f8" />
-
+<img width="574" height="631" alt="Image" src="https://github.com/user-attachments/assets/2bb7cbf4-c20a-45ff-93c1-da03c72bf579" />
 ---
 
 ## ▶️ How to Run
 
-1. Install R and Shiny:
+### 1️⃣ Install Shiny
 
 ```r
 install.packages("shiny")
 ```
 
-2. Run the app:
+### 2️⃣ Run the Application
 
 ```r
 shiny::runApp()
 ```
+
+Or open `app.R` in RStudio and click **Run App**.
 
 ---
 
@@ -60,8 +64,18 @@ shiny::runApp()
 ```
 app.R
 README.md
-screenshot.png
 ```
+
+---
+
+## 🧠 Technical Notes
+
+* Expression evaluation is handled entirely in JavaScript.
+* Safe evaluation is performed using controlled execution (no direct user `eval` input).
+* Parentheses are automatically closed before calculation.
+* Factorial is limited to 170 to prevent numeric overflow.
+* Scientific notation appears automatically for extreme values.
+* R acts only as a message bridge between UI buttons and the JavaScript engine.
 
 ---
 
@@ -69,6 +83,17 @@ screenshot.png
 
 Ali Abdelbasir (Lolo)
 
+---
+
+## 📌 Future Improvements
+
+* Add sin / cos / tan
+* DEG / RAD mode toggle
+* Power (^) operator
+* Calculation history panel
+* Keyboard input support
+* Memory functions (M+, M-, MR)
+* Deploy to shinyapps.io or convert to desktop app
 ---
 
 ## 📌 Notes
