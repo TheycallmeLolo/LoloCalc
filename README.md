@@ -39,6 +39,7 @@ It combines a CASIO-inspired design with smooth UI interactions and correct math
 ## 📸 Screenshot
 
 <img width="574" height="631" alt="Image" src="https://github.com/user-attachments/assets/2bb7cbf4-c20a-45ff-93c1-da03c72bf579" />
+
 ---
 
 ## ▶️ How to Run
