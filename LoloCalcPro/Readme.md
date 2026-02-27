@@ -11,9 +11,9 @@
 LoloCalcPro is a scientific calculator web application built entirely in R Shiny. It features a realistic LCD-style display, tactile button press animations, a live calculation history sidebar, full keyboard support, memory functions, and trigonometric operations — all in a single self-contained `.R` file.
 
 ---
-##ScreenShot
+## ScreenShot
 
-
+<img width="640" height="611" alt="Image" src="https://github.com/user-attachments/assets/2b507b89-cb12-4827-adb4-4d15be5e522c" />
 
 ---
 
@@ -159,4 +159,5 @@ MIT License — free to use, modify, and distribute with attribution.
 
 ```
 Copyright (c) 2026 Ali Abdelbasir (Lolo)
+
 ```
